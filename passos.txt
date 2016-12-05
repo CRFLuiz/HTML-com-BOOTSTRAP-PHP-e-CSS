@@ -1,8 +1,0 @@
-Oi, galera. Estou iniciando um tutorial do básico de html até bootstrap, passando um pouco de CSS também. Meu objetivo, caso essas video-aulas deem certo, é que eu inicie um tutorial de php mais futuramente, primeiro vamos ver o decorrer deste tutorial.
-Antes de mais nada, eu tenho um exemplo de um site que eu fiz para uma empresa de advocacia. Quando eles compraram o domínio do site entregaram um exemplo para eles e eu fui chamado para fazer as alterações no site. Atualmente, modifiquei o layout do site e espero atualizações da empresa para que eu atualize o site.
-
--Ferramentas
--Estrutura basica de um  documento HTML
--Estrutura basica de um site
--estilizacao de background  via html
--tag div, a, Center
