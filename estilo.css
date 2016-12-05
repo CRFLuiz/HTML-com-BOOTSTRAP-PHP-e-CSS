@@ -3,3 +3,19 @@ body
 	background-color: #e74c3c;
 	color: white;
 }
+
+#azul
+{
+	background-color: blue;
+}
+
+.texto-centralizado
+{
+	text-align: center;
+}
+
+.texto-italico-serifado
+{
+	font-style: italic;
+	font-family: serif;
+}
