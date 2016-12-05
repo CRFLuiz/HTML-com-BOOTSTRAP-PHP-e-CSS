@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+body
+{
+	border: 0;
+	/*background-color: rgba(192, 57, 43,1.0);*/
+  	background: url('../img/bg.png') fixed no-repeat;
+  	background-size: 100% 100%;
+  	padding-top: 70px;
+	margin: 0px;
+}
+
+#site
+{
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+}
+
+.footer {
+  padding: 10px 0;
+  margin-top: 0;
+  background-color: rgba(0,0,0,.975);
+}
+.footer p {
+  margin-bottom: 0;
+  color: white;
+}
+.footer-links {
+  margin: 10px 0;
+}
+.footer-links li {
+  display: inline;
+  padding: 0 2px;
+}
+.footer-links li:first-child {
+  padding-left: 0;
+}
+
+#logo
+{
+	color: rgba(192, 57, 43,1.0);
+}

@@ -1,0 +1,531 @@
+﻿<!doctype html><!--Obrigatório doctype do HTML5-->
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap 3</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link href="css/meuestilo.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('#MeuModal').modal('toggle');
+		});
+	</script>
+</head>
+<body>
+<!--5. Barra de navegação-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+    	<div class="container-fluid">
+        	<div class="navbar-header">
+            	<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra"> <!--Inicio responsividade (celular)-->
+                	<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> <!--Fim responsividade (celular)-->
+                <a href="#" class="navbar-brand">5. Barra de navegação</a>
+            </div>
+            <div class="collapse navbar-collapse" id="barra">
+            	<ul class="nav navbar-nav">
+                	<li><a href="">link 1</a></li>
+                	<li><a href="">link 2</a></li>
+                	<li><a href="">link 3</a></li>
+                </ul>
+                <form action="" class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                	<input type="text" class="form-control" placeholder="Pesquisar">
+                </div>
+                <button class="btn btn-default">Buscar</button>
+                </form>
+                <p class="navbar-text">Texto na navegação - <a href="#" class="navbar-link">Link</a></p>
+                <ul class="nav navbar-nav navbar-right">
+                	<li><a href="">link 4</a></li>
+                	<li><a href="">link 5</a></li>
+                	<li><a href="">link 6</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--1. Botões-->
+	<div class="row">
+    	<div class="col-md-2">
+			<h1>1. Botões</h1>
+    	</div>
+    	<div id="botões" class="col-md-8">
+			<a href="" class="btn">Link</a>
+            <button class="btn">Botão</button>
+            <input type="button" value="Input" class="btn">
+            <input type="button" value="Enviar" class="btn"><br><br>
+        <div>
+            <button class="btn btn-lg">Btn</button><br>
+            <button class="btn btn-warning btn-sm">Warning</button><br>
+            <button class="btn btn-primary btn-sm"> Primary</button><br>
+            <button class="btn btn-info btn-xs">Info</button><br>
+            <button class="btn btn-success btn-block">Sucess</button><br>
+            <button class="btn btn-danger">Danger</button><br>
+            <button class="btn btn-default">Default</button><br>
+            <button class="btn btn-link">Link</button><br>
+        </div>
+        <p></p>
+        <div class="btn-group btn-group-lg">
+            <button class="btn btn-primary">Primario</button>
+            <button class="btn btn-info">Default</button>
+            <button class="btn btn-success">Sucesso</button>
+        </div>
+        <p></p>
+        <div class="btn-group">
+            <button class="btn btn-primary">Primario</button>
+            <button class="btn btn-info">Default</button>
+            <button class="btn btn-success">Sucesso</button>
+        </div>
+        <p></p>
+        <div class="btn-group btn-group-sm">
+            <button class="btn btn-primary">Primario</button>
+            <button class="btn btn-info">Default</button>
+            <button class="btn btn-success">Sucesso</button>
+        </div>
+        <p></p>
+        <div class="btn-group btn-group-xs">
+            <button class="btn btn-primary">Primario</button>
+            <button class="btn btn-info">Default</button>
+            <button class="btn btn-success">Sucesso</button>
+        </div>
+        <p></p>
+        <div class="btn-group btn-group-vertical">
+            <button class="btn btn-primary">Primario</button>
+            <button class="btn btn-info">Default</button>
+            <button class="btn btn-success">Sucesso</button>
+    	</div>
+        <p></p>
+        <div class="btn-group btn-group-lg">
+        <button class="btn btn-primary">Primario</button>
+    	<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+        	<ul class="dropdown-menu">
+            	<li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+            </ul>
+	</div>
+	</div>
+    <div class="col-md-2"></div>
+    </div>
+
+<!--2. Form-->
+    <div class="row">
+    	<div class="col-md-2">
+        	<h1>2. Forms</h1>
+        </div>
+        <div class="col-md-8" id="forms">
+            <form action="" class="form-horizontal">
+                <!--Email-->
+                <div class="form-group">
+                    <label for="" class="control-label">Email</label>
+                        <input type="email" id="inputEmail" class="form-control" required>
+                </div>
+                <!--Senha-->
+                <div class="form-group">
+                    <label for="" class="control-label">Senha</label>
+                    <input type="text" id="inputPassword" class="form-control" required>
+                </div>
+                <!--WARNING-->
+                <div class="form-group has-warning form-group-lg">
+                    <label for="" class="col-sm-2 control-label">Warning (P/ avisos)</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                        <span class="help-inline">Alguma coisa deu errado!</span>
+                    </div>
+                </div>
+                <!--ERROR-->
+                <div class="form-group has-error">
+                    <label for="" class="col-sm-2 control-label">Error (P/ erros)</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control input-sm">
+                        <span class="help-inline">Por favor, corrija o erro!</span>
+                    </div>
+                </div>
+                <!--SUCCESS-->
+                <div class="form-group has-success form-group-sm">
+                    <label for="" class="col-sm-2 control-label">Success (P/ confirmações)</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                        <span class="help-inline">Está tudo correto!</span>
+                    </div>
+                </div>
+            </form>
+            <!--Form com add on-->
+            <form action="" class="form-inline">
+                <div class="form-group">
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-addon">R$</div>
+                        <input type="text" class="form-control">
+                        <div class="input-group-addon">.00</div>
+                    </div>
+                    <button class="btn btn-primary">Transferencia</button>
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-addon">R$</div>
+                        <div class="input-group-btn">
+                        	<button class="btn btn-default">Vai!
+                            </button>
+                        </div>
+                        <input type="text" class="form-control">
+                        <div class="input-group-addon">.00</div>
+                    </div>
+                    <button class="btn btn-primary">Transferencia</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+<!--3. Classe de contexto-->
+	<div class="row">
+	<div class="col-md-2">
+    	<h1>3. Classe de contexto</h1>
+	</div>
+    <div class="col-md-8" id="ccontexto">
+		<p class="text-muted">Frase com ênfase MUTED</p>
+		<p class="text-primary">Frase com ênfase PRIMARY</p>
+		<p class="text-warning">Frase com ênfase WARNING</p>
+		<p class="text-danger">Frase com ênfase DANGER</p>
+		<p class="text-info">Frase com ênfase INFO</p>
+		<p class="text-success">Frase com ênfase SUCCESS</p>
+        <br><br>
+        <p class="bg-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minima, possimus, harum laboriosam necessitatibus labore deserunt saepe soluta voluptatem iusto dicta iste itaque numquam natus nam hic officiis repudiandae earum.</p>
+        <p class="bg-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minima, possimus, harum laboriosam necessitatibus labore deserunt saepe soluta voluptatem iusto dicta iste itaque numquam natus nam hic officiis repudiandae earum.</p>
+        <p class="bg-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minima, possimus, harum laboriosam necessitatibus labore deserunt saepe soluta voluptatem iusto dicta iste itaque numquam natus nam hic officiis repudiandae earum.</p>
+        <p class="bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minima, possimus, harum laboriosam necessitatibus labore deserunt saepe soluta voluptatem iusto dicta iste itaque numquam natus nam hic officiis repudiandae earum.</p>
+        <p class="bg-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minima, possimus, harum laboriosam necessitatibus labore deserunt saepe soluta voluptatem iusto dicta iste itaque numquam natus nam hic officiis repudiandae earum.</p>
+	</div>
+</div>
+
+<!--4. Jumbotron e ícones-->
+	<div class="row">
+		<div class="col-md-2">
+			<h1>4. Jumbotron e ícones</h1>
+		</div>
+		<div class="col-md-8" id="jumboicon">
+            <section id="heroi">
+                <header class="page-header">
+                    <h1>Unidade Heroi-<small>Um componente leve de showcase</small></h1>
+                </header>
+                <aside class="Jumbotron">
+                    <h1>Conheça o Ponto Canal</h1>
+                    <p>Inscreva-se e conheça um pouco do mundo da programação!</p>
+                    <p><a href="" class="">Clique e confira</a></p>
+                    </aside>
+            </section>
+    	<span class="glyphicon glyphicon-gift"></span>
+    	<p><a href="" class="btn btn-primary btn-large"><span class="glyphicon glyphicon-globe"></span></a></p>
+		</div>
+	</div>
+    <div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8" id="jumboicon2">
+        <p></p>
+            <header class="jumbotron">
+            	<div class="container-fluid">
+                    <h1>Componentes</h1>
+                    <p>Componentes reusáveis para proover navegação, alertas e muito mais</p>
+                </div>
+			</header>
+		<div class="col-md-2"></div>
+		</div>
+	</div>
+
+<!--6. Lista de navegação-->
+	<div class="row">
+		<div class="col-md-2">
+        	<h1>6. Lista de navegação</h1>
+        </div>
+		<div class="col-md-8" id="listanav">
+        	<p></p>
+            <h3>Lista agrupada</h3>
+        	<ul class="list-group">
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 2</li>
+                <li class="list-group-item">Item 3</li>
+                <li class="list-group-item">Item 4</li>
+                <li class="list-group-item">Item 5</li>
+    		</ul>
+            <h3>Lista de links</h3>
+            	<div class="list-group">
+            		<a href="" class="list-group-item active">Link</a>
+            		<a href="" class="list-group-item disabled">Link</a>
+            		<a href="" class="list-group-item">Link</a>
+            		<a href="" class="list-group-item">Link</a>
+            		<a href="" class="list-group-item">Link</a>
+            	</div>
+                <h3>Lista de links com badge</h3>
+            	<div class="list-group">
+            		<a href="" class="list-group-item active"><span class="badge">10</span> Link</a>
+            		<a href="" class="list-group-item disabled"><span class="badge">8</span> Link</a>
+            		<a href="" class="list-group-item"><span class="badge">9</span> Link</a>
+            		<a href="" class="list-group-item"><span class="badge">2</span> Link</a>
+            		<a href="" class="list-group-item"><span class="badge">30</span> Link</a>
+            	</div>
+                <h3>Lista de links de contexto</h3>
+            	<div class="list-group">
+            		<a href="" class="list-group-item list-group-item-success">Link</a>
+            		<a href="" class="list-group-item list-group-item-info">Link</a>
+            		<a href="" class="list-group-item list-group-item-warning">Link</a>
+            		<a href="" class="list-group-item list-group-item-danger">Link</a>
+            	</div>
+                <h3>Lista de links</h3>
+            	<div class="list-group">
+            		<a href="" class="list-group-item active">
+                    	<h4 class="list-group-item-heading">Título da minha Sessão</h4>
+                    	<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia, optio, excepturi nostrum autem eum eligendi deserunt dignissimos quidem ab tenetur impedit dicta sit placeat nobis est obcaecati earum in.</p></a>
+            		<a href="" class="list-group-item disabled">
+                    	<h4 class="list-group-item-heading">Título da minha Sessão</h4>
+                    	<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia, optio, excepturi nostrum autem eum eligendi deserunt dignissimos quidem ab tenetur impedit dicta sit placeat nobis est obcaecati earum in.</p>
+                   	</a>
+            		<a href="" class="list-group-item">
+                    	<h4 class="list-group-item-heading">Título da minha Sessão</h4>
+                    	<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia, optio, excepturi nostrum autem eum eligendi deserunt dignissimos quidem ab tenetur impedit dicta sit placeat nobis est obcaecati earum in.</p>
+                    </a>
+            		<a href="" class="list-group-item">
+                    	<h4 class="list-group-item-heading">Título da minha Sessão</h4>
+                    	<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia, optio, excepturi nostrum autem eum eligendi deserunt dignissimos quidem ab tenetur impedit dicta sit placeat nobis est obcaecati earum in.</p>
+                    </a>
+            	</div>
+        </div>
+	</div>
+    
+<!--7. Paginação, alertas e labels-->
+	<div class="row">
+		<div class="col-md-2">
+			<!--Paginação-->
+            <h1>7. Paginação, alertas e labels</h1>
+		</div>
+		<div class="col-md-8" id="pagalab">
+        	<h3>Paginação:</h3>
+        	<ul class="pagination pagination-lg">
+        		<li class="disabled"><span>&lt;&lt;</span></li>
+                <li><span><a href="">1</a></span></li>
+				<li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">&gt;&gt;</a></li>
+        	</ul>
+            <p></p>
+            <ul class="pagination">
+        		<li class="disabled"><span>&lt;&lt;</span></li>
+                <li><span><a href="">1</a></span></li>
+				<li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">&gt;&gt;</a></li>
+        	</ul>
+            <p></p>
+            <ul class="pagination pagination-sm">
+        		<li class="disabled"><span>&lt;&lt;</span></li>
+                <li><span><a href="">1</a></span></li>
+				<li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">&gt;&gt;</a></li>
+        	</ul>
+            <p></p>
+            <!--Alertas-->
+            <h3>Alertas:</h3>
+            <div class="alert alert-block alert-warning">
+            	<button type="button" class="close" data-dismiss="alert">x</button><!--Com data-dismiss="alert"(Div pode ser fechada no X)-->
+            	<h4>Advertencia! (Com data-dismiss="alert"(Div pode ser fechada X))</h4>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, in, ipsam, ea maiores hic provident vitae laboriosam pariatur expedita illum quaerat ullam maxime nemo voluptatem quas. Repellat, dicta quae veniam. <a href="" class="alert-link">Link do alerta!</a>
+            </div>
+            <div class="alert alert-block alert-danger"><!--Sem data-dismiss="alert"(Div NÃO pode ser fechada no X)-->
+            	<button class="close">x</button>
+            		<h4>Erro ou perigo!(Sem data-dismiss="alert"(Div NÃO pode ser fechada X))</h4>
+            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, numquam repudiandae accusantium atque suscipit deleniti consequuntur temporibus saepe. Consequatur reprehenderit fuga repellat adipisci ipsum dolor velit quae nesciunt nemo quod. <a href="" class="alert-link">Link do alerta!</a></p>
+                    <p>
+                    	<a href="" class="btn btn-danger">Tomar uma ação</a>
+                        <a href="" class="btn btn-default">Ou faça isto</a>
+                    </p>
+            </div>
+            <div class="alert alert-block alert-info">
+            	<button type="button" class="close" data-dismiss="alert">x</button><!--Sem data-dismiss="alert"(Div pode ser fechada no X)-->
+            	<h4>Informação!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, in, ipsam, ea maiores hic provident vitae laboriosam pariatur expedita illum quaerat ullam maxime nemo voluptatem quas. Repellat, dicta quae veniam. <a href="" class="alert-link">Link do alerta!</a></p>
+            </div>
+            <div class="alert alert-block alert-success">
+            	<button type="button" class="close" data-dismiss="alert">x</button><!--Sem data-dismiss="alert"(Div pode ser fechada no X)-->
+            	<h4>Sucesso!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, in, ipsam, ea maiores hic provident vitae laboriosam pariatur expedita illum quaerat ullam maxime nemo voluptatem quas. Repellat, dicta quae veniam.  <a href="" class="alert-link">Link do alerta!</a></p>
+            </div>
+            <!--Labels-->
+            <h3>Labels:</h3>
+            <section id="labels">
+            	<header class="page-header">
+            		<h1>Labels</h1>
+            	</header>
+                <h1>Exemplo de Cabeçalho<span class="label label-default">Default</span></h1>
+                <h2>Exemplo de Cabeçalho<span class="label label-primary">Primary</span></h2>
+                <h3>Exemplo de Cabeçalho<span class="label label-success">Success</span></h3>
+                <h4>Exemplo de Cabeçalho<span class="label label-info">Info</span></h4>
+                <h5>Exemplo de Cabeçalho<span class="label label-warning">Warning</span></h5>
+                <h6>Exemplo de Cabeçalho<span class="label label-danger">Danger</span></h6>
+            </section>
+        </div>
+        <div class="col-md-2"></div>
+	</div>
+
+<!--8. Carroussel-->
+	<div class="row">
+		<div class="col-md-2">
+			<h1>8. Carroussel</h1>
+		</div>
+		<div class="col-md-8" id="carrosselanimado">
+        	<p></p>
+         	<section class="carousel slide" id="carrossel">
+                        	
+                <!--Indicadores-->
+            	<ol class="carousel-indicators">
+            		<li data-target="#carrossel" data-slide-to="0" active></li>
+            		<li data-target="#carrossel" data-slide-to="1"></li>
+            		<li data-target="#carrossel" data-slide-to="2"></li>
+            		<li data-target="#carrossel" data-slide-to="3"></li>
+            	</ol>
+                
+                <div class="carousel-inner">
+                
+                	<!--Primeira imagem-->
+                	<section class="item active">
+                    	<img src="img/slide/img1.jpg" alt="img1" class="carousel" width="100%">
+                			<div class="carousel-caption carrosselbg">
+                				<h4>Primeiro rótulo do Slide</h4>
+                				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, a, magni, accusantium, culpa ratione distinctio accusamus magnam aliquid numquam et alias consequuntur adipisci quae maxime at illo reprehenderit saepe corporis.</p>
+                			</div>
+                    </section>
+                    <!--Segunda imagem-->
+                	<section class="item">
+                    	<img src="img/slide/img2.jpg" alt="img2" class="carousel" width="100%">
+                			<div class="carousel-caption carrosselbg">
+                				<h4>Segundo rótulo do site</h4>
+                				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, minus, laboriosam, natus ipsam nemo quaerat accusamus iste dolor facilis ratione veritatis distinctio aliquid deleniti cumque autem laborum voluptatibus pariatur quod.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, minus, laboriosam, natus ipsam nemo quaerat accusamus iste dolor facilis ratione veritatis distinctio aliquid deleniti cumque autem laborum voluptatibus pariatur quod.</p>
+                			</div>
+                	</section>
+                	<!--Terceira imagem-->
+                    <section class="item">
+                    	<img src="img/slide/img3.jpg" alt="img3" class="carousel" width="100%">
+                			<div class="carousel-caption carrosselbg">
+                				<h4>Terceiro rótulo do site</h4>
+                				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, dolorum, ipsum sit accusamus consequatur nam hic expedita neque asperiores libero sunt quod laboriosam vel delectus aut necessitatibus aperiam ipsam velit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, dolorum, ipsum sit accusamus consequatur nam hic expedita neque asperiores libero sunt quod laboriosam vel delectus aut necessitatibus aperiam ipsam velit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, dolorum, ipsum sit accusamus consequatur nam hic expedita neque asperiores libero sunt quod laboriosam vel delectus aut necessitatibus aperiam ipsam velit.</p>
+                			</div>
+                	</section>
+                	<!--Quarta imagem-->
+                    <section class="item"><img src="img/slide/img4.gif" alt="img4" class="carousel" width="100%">
+                			<div class="carousel-caption carrosselbg">
+                				<h4>Quarto rótulo do site</h4>
+                				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, recusandae, adipisci, laboriosam aliquam eos necessitatibus praesentium obcaecati cum dicta maiores sapiente quibusdam ipsam possimus corporis sit nesciunt fugit vel numquam!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, recusandae, adipisci, laboriosam aliquam eos necessitatibus praesentium obcaecati cum dicta maiores sapiente quibusdam ipsam possimus corporis sit nesciunt fugit vel numquam!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, recusandae, adipisci, laboriosam aliquam eos necessitatibus praesentium obcaecati cum dicta maiores sapiente quibusdam ipsam possimus corporis sit nesciunt fugit vel numquam!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, recusandae, adipisci, laboriosam aliquam eos necessitatibus praesentium obcaecati cum dicta maiores sapiente quibusdam ipsam possimus corporis sit nesciunt fugit vel numquam!</p>
+                			</div>
+                	</section>
+                    
+                </div>
+                <!--Botão direita-->
+                <a href="#carrossel" class="carousel-control left" data-slide="prev" role="button">
+                	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <!--Botão esquerda-->
+                <a href="#carrossel" class="carousel-control right" data-slide="next" role="button">
+                	<span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Proximo</span>
+                </a>
+            </section>
+        </div>
+        <div class="col-md-2"></div>
+	</div>
+<!--9. Modal-->
+	<div class="row">
+		<div class="col-md-2">
+			<h1>9. Modal</h1>
+		</div>
+		<div class="col-md-8" id="mod">
+        	<!--Inicio modal-->
+            <section id="modal">
+            	<header class="page-header">
+                	<h1>Modal</h1>
+                </header>
+                <!--Botão para chamar o modal-->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#MeuModal">Modal</button>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#MeuModalLg">Modal grande</button>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#MeuModalSm">Modal pequeno</button>
+                <!--modal normal-->
+                <section class="modal fade" id="MeuModal">
+                	<div class="modal-dialog">
+                    	<div class="modal-content">
+                        	<div class="modal-header">
+                            	<button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Título do meu modal</h4>
+                                <div class="modal-body">
+                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut, molestiae odit obcaecati nobis enim eius facere esse blanditiis velit? Sequi, odit, labore esse rem dolorum quibusdam explicabo enim quis.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut, molestiae odit obcaecati nobis enim eius facere esse blanditiis velit? Sequi, odit, labore esse rem dolorum quibusdam explicabo enim quis.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut, molestiae odit obcaecati nobis enim eius facere esse blanditiis velit? Sequi, odit, labore esse rem dolorum quibusdam explicabo enim quis.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut, molestiae odit obcaecati nobis enim eius facere esse blanditiis velit? Sequi, odit, labore esse rem dolorum quibusdam explicabo enim quis.</p>
+                                </div>
+                                <footer class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--modal grande-->
+                <section class="modal fade" id="MeuModalLg">
+                	<div class="modal-dialog modal-lg">
+                    	<div class="modal-content">
+                        	<div class="modal-header">
+                            	<button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Título do meu modal</h4>
+                                <div class="modal-body">
+                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut, molestiae odit obcaecati nobis enim eius facere esse blanditiis velit? Sequi, odit, labore esse rem dolorum quibusdam explicabo enim quis.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut, molestiae odit obcaecati nobis enim eius facere esse blanditiis velit? Sequi, odit, labore esse rem dolorum quibusdam explicabo enim quis.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut, molestiae odit obcaecati nobis enim eius facere esse blanditiis velit? Sequi, odit, labore esse rem dolorum quibusdam explicabo enim quis.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut, molestiae odit obcaecati nobis enim eius facere esse blanditiis velit? Sequi, odit, labore esse rem dolorum quibusdam explicabo enim quis.</p>
+                                </div>
+                                <footer class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--modal pequeno-->
+                <section class="modal fade" id="MeuModalSm">
+                	<div class="modal-dialog modal-sm">
+                    	<div class="modal-content">
+                        	<div class="modal-header">
+                            	<button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Título do meu modal</h4>
+                                <div class="modal-body">
+                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut, molestiae odit obcaecati nobis enim eius facere esse blanditiis velit? Sequi, odit, labore esse rem dolorum quibusdam explicabo enim quis.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut, molestiae odit obcaecati nobis enim eius facere esse blanditiis velit? Sequi, odit, labore esse rem dolorum quibusdam explicabo enim quis.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut, molestiae odit obcaecati nobis enim eius facere esse blanditiis velit? Sequi, odit, labore esse rem dolorum quibusdam explicabo enim quis.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut, molestiae odit obcaecati nobis enim eius facere esse blanditiis velit? Sequi, odit, labore esse rem dolorum quibusdam explicabo enim quis.</p>
+                                </div>
+                                <footer class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="col-md-2"></div>
+	</div>
+    
+    
+</body>
+</html>

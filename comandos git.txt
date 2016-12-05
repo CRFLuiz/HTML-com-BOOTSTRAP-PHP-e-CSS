@@ -1,0 +1,25 @@
+cd, dir até o diretório
+.gitignore -> nome do arquivo com o nome dos arquivos, pastas e/ou extensões que devem ser ignoradas. Exemplo:
+relacao-variaveis.txt
+tmp/
+imagens/*.bmp
+
+git init
+git status
+git add <nome do arqui/pasta> OU git add .
+git commit -m "Comentario do commit"
+git commit -a -m "O -a substitui o git add. Possibilita rastrear e comitar ao mesmo tempo. Só serve para arquivos que já tiveram, pelo menos, um git add"
+git log
+git log n-2
+git log --oneline
+git log --stat
+git diff (mostra a modificação que houve entre um arquivo que foi commitado e que foi modificado, mas ainda não commitado)
+git rm arquivo (Deleta o arquivo)
+git mv estilos.css principal.css (Renomeia o arquivo estilos para principal)
+git mv principal.js js/principal.js (Move o arquivo principal para dentro da pasta js)
+git checkout -- index.html (Desfaz as alterações no arquivo index que ainda não foi rastreado. Também recupera arquivo deletado que não foi comitado)
+git remote add origin https://github.com/CRFLuiz/SKBmais18.git
+git push -u origin master
+git pull (Atualiza as branchers existentes para poder mudar)
+git checkout nome_brancher (Para mudar de brancher)
+git reset --hard 7733388 (Desfaz as alterações do commit 7733388)
