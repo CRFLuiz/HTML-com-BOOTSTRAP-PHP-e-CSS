@@ -20,6 +20,6 @@ git mv principal.js js/principal.js (Move o arquivo principal para dentro da pas
 git checkout -- index.html (Desfaz as alterações no arquivo index que ainda não foi rastreado. Também recupera arquivo deletado que não foi comitado)
 git remote add origin https://github.com/CRFLuiz/SKBmais18.git
 git push -u origin master
-git pull (Atualiza as branchers existentes para poder mudar)
+git pull (Atualiza as branchers existentes para poder mudar / atualiza o repositorio local com as ultimas atualizações commitadas no github)
 git checkout nome_brancher (Para mudar de brancher)
 git reset --hard 7733388 (Desfaz as alterações do commit 7733388)
