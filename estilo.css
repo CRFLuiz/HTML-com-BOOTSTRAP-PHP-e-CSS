@@ -1,21 +1,21 @@
 body
 {
-	background-color: #e74c3c;
+	background-color: #2D7876;
 	color: white;
 }
 
 .cabecalho
 {
-	background-color: #2980b9;
+	background-color: #D35500;
 }
 /*ALTERA A FONTE PARA BRANCO E OS BACKGROUNDS NO :HOVER DAS OPÇÕES DO MENU (DROPDOWN)*/
 .nav>li>a:hover
 {
-	background-color: #3498db;
+	background-color: #9C6127;
 }
 .nav>li>a:focus
 {
-	background-color: #3498db;
+	background-color: #9C6127;
 }
 .nav>li>a
 {
@@ -23,11 +23,11 @@ body
 }
 .meu-dropdown
 {
-	background-color: #3498db;
+	background-color: #D35500;
 }
 .meu-dropdown>li>a:hover
 {
-	background-color: #1abc9c;
+	background-color: #646C4F;
 }
 .meu-dropdown>li>a
 {
@@ -35,12 +35,14 @@ body
 }
 .nav .open>a:focus, .nav .open>a:hover
 {
-	background-color: #3498db;
+	background-color: #9C6127;
 }
 /*NAVBAR-BRAND ALTERA A COR DA LOGO PARA BRANCO*/
 .navbar-brand
 {
 	color: white;
+	margin: 0;/*PARA TERMOS 100% DO ESPAÇO PARA A IMAGEM DE LOGO*/
+	padding: 0;/*PARA TERMOS 100% DO ESPAÇO PARA A IMAGEM DE LOGO*/
 }
 .navbar-brand:hover
 {
@@ -49,4 +51,14 @@ body
 .navbar-brand:visited
 {
 	color: white;
+}
+/*O BG DO MENU ESTAVA FICANDO BRANCO QUANDO PERDIA O FOCO*/
+.nav .open>a
+{
+	background-color: #D35500;
+}
+
+.img-logo
+{
+	margin: 0;/*PARA TERMOS 100% DO ESPAÇO PARA A IMAGEM DE LOGO*/
 }
