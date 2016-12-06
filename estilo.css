@@ -72,3 +72,18 @@ body
 	margin:0;
 	padding: 20px;
 }
+/*ALTERAÇÕES NO RODAPÉ*/
+.rodape
+{
+	background-color: #D35500;
+}
+
+.texto-rodape
+{
+	text-align: center;
+}
+
+.row
+{
+	margin-right: 0; /*TIRA O BUG DO ESPAÇO NA LATERAL*/
+}
