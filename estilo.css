@@ -4,18 +4,49 @@ body
 	color: white;
 }
 
-#azul
+.cabecalho
 {
-	background-color: blue;
+	background-color: #2980b9;
 }
-
-.texto-centralizado
+/*ALTERA A FONTE PARA BRANCO E OS BACKGROUNDS NO :HOVER DAS OPÇÕES DO MENU (DROPDOWN)*/
+.nav>li>a:hover
 {
-	text-align: center;
+	background-color: #3498db;
 }
-
-.texto-italico-serifado
+.nav>li>a:focus
 {
-	font-style: italic;
-	font-family: serif;
+	background-color: #3498db;
+}
+.nav>li>a
+{
+	color: white;
+}
+.meu-dropdown
+{
+	background-color: #3498db;
+}
+.meu-dropdown>li>a:hover
+{
+	background-color: #1abc9c;
+}
+.meu-dropdown>li>a
+{
+	color: white;
+}
+.nav .open>a:focus, .nav .open>a:hover
+{
+	background-color: #3498db;
+}
+/*NAVBAR-BRAND ALTERA A COR DA LOGO PARA BRANCO*/
+.navbar-brand
+{
+	color: white;
+}
+.navbar-brand:hover
+{
+	color: white;
+}
+.navbar-brand:visited
+{
+	color: white;
 }
