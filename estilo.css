@@ -7,6 +7,7 @@ body
 .cabecalho
 {
 	background-color: #D35500;
+	margin: 0;/*PARA GRUDAR A BORDA DO SITE NO MENU*/
 }
 /*ALTERA A FONTE PARA BRANCO E OS BACKGROUNDS NO :HOVER DAS OPÇÕES DO MENU (DROPDOWN)*/
 .nav>li>a:hover
@@ -61,4 +62,13 @@ body
 .img-logo
 {
 	margin: 0;/*PARA TERMOS 100% DO ESPAÇO PARA A IMAGEM DE LOGO*/
+}
+
+.corpo-site /*BORDAS ADICIONADAS PARA ESTILIZAÇÃO*/
+{
+	border-style: dashed;
+	border-color: #3f9b99;
+	border-width: 0 5px 0 5px;
+	margin:0;
+	padding: 20px;
 }
