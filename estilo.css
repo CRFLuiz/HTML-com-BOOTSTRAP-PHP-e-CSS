@@ -1,8 +1,12 @@
+html, body
+{
+	height: 100%;
+}
+
 body
 {
 	background-color: #2D7876;
 	color: white;
-	min-height: 100%;
 }
 
 .cabecalho
@@ -65,24 +69,25 @@ body
 	margin: 0;/*PARA TERMOS 100% DO ESPAÇO PARA A IMAGEM DE LOGO*/
 }
 
-.corpo-site /*BORDAS ADICIONADAS PARA ESTILIZAÇÃO*/
+.row>.corpo-site /*BORDAS ADICIONADAS PARA ESTILIZAÇÃO*/
 {
 	border-style: dashed;
 	border-color: #3f9b99;
 	border-width: 0 5px 0 5px;
 	margin:0;
 	padding: 20px;
-	height:auto;
+	min-height: 100%;
+	bottom: 0;
 }
 /*ALTERAÇÕES NO RODAPÉ*/
 .rodape
 {
 	background-color: #D35500;
-	bottom: 0;
-
-	position: relative;
+	position: absolute;
 	bottom: 0;
 	width: 100%;
+	position: relative;
+	bottom: 0;
 }
 
 .texto-rodape
@@ -93,4 +98,7 @@ body
 .row
 {
 	margin-right: 0; /*TIRA O BUG DO ESPAÇO NA LATERAL*/
+	position: relative;
+	min-height: 100%;
+	bottom: 0;
 }
