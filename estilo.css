@@ -23,7 +23,7 @@ body
 }
 .meu-dropdown
 {
-	background-color: #D35500;
+	background-color: #D35500;/*laranja*/
 }
 .meu-dropdown>li>a:hover
 {
@@ -55,7 +55,7 @@ body
 /*O BG DO MENU ESTAVA FICANDO BRANCO QUANDO PERDIA O FOCO*/
 .nav .open>a
 {
-	background-color: #D35500;
+	background-color: #D35500;/*laranja*/
 }
 
 .img-logo
